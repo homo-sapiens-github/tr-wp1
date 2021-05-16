@@ -1,0 +1,91 @@
+:root {
+    --main-bg1: #000000;
+    --main-bg2: #000000;
+    --main-bg3: #1B1B1B;
+    --main-wt1: #FFFFFF;
+    --main-wt2: #F3F3F3;
+    --main-wt3: #E1E1E1;
+  }
+
+.section-container{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.about-container{
+    background-color:var(--main-wt1, #FFFFFF);
+    color: var(--main-bg1, #000000)
+}
+
+.contact-container{
+    background-color:var(--main-bg2, #000000);
+    color: var(--main-wt2, #FFFFFF)
+}
+
+
+.mainpoint-container{
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.mainpoint-text-div{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 35px;
+}
+
+#contact-form{
+    width: 100%;
+    font-size: 1.5em;
+}
+
+#form-name-input, #form-email-input, #form-msg-input{
+    width: 100%;
+    background-color: var(--main-wt2, #FFFFFF);
+    min-height: 50px;
+    border-radius: 50px;
+    padding-left: 10px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+#form-msg-input{
+    height: 300px;
+    border-radius: 20px;
+    resize: none;
+}
+
+#form-sub-btn{
+    min-width: 150px;
+    border-radius: 50px;
+    min-height: 50px;
+    font-weight: 700;
+    background-color: var(--main-wt2, #FFFFFF);
+    border: none;
+}
+
+#contact-success{
+    display: none;
+}
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+

@@ -1,0 +1,78 @@
+.animation-div {
+  width: 50vw;
+  min-width: 300px;
+}
+#laptop,
+#desktop,
+#mobile,
+#tablet {
+  display: none;
+  -webkit-animation: hideshow 4s 0s ease-in-out;
+          animation: hideshow 4s 0s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  transform-origin: center top;
+  opacity: 0;
+}
+#desktop {
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+#laptop {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+#laptop g {
+  transform: translateX(15px);
+}
+#mobile {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+#mobile g {
+  transform: translateX(-10px);
+}
+#tablet {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+#tablet g {
+  transform: translateX(30px);
+}
+#tablet g path.outer {
+  transform: flipY();
+}
+@-webkit-keyframes hideshow {
+  0% {
+    opacity: 0;
+    transform: translateY(-40%) scale(0.05);
+  }
+  10% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hideshow {
+  0% {
+    opacity: 0;
+    transform: translateY(-40%) scale(0.05);
+  }
+  10% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,60 @@
+.nav-item,.nav-option {
+    min-width: 120px;
+    text-align: center;   
+}
+
+.navbar-gp-logo {
+    width: auto;
+    height: 40px;
+}
+
+.company-name {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 20px;
+}
+
+.company-name-bold{
+    font-weight: 700;
+}
+.nav-abs-top{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.nav-register{
+    background-color: white;
+    border-radius: 30px;
+    color: blue !important;
+}
+
+.navbar {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.nav-social{
+    display: flex;
+    flex-direction: row;
+    padding:0;
+    margin: 0;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-social>li>a{
+    color:white !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+button.navbar-toggler {
+    border: none;
+}
